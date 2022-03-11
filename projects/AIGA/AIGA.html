@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+    <head>
+       <title>katie q chen</title>
+        <link rel="stylesheet" type="text/css" href="../../style.css"> 
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
+        <script src="../../script.js"></script>
+    </head>
+    <body>
+        <div class="custom-cursor"></div>
+        <div class="block block--white">  
+       
+       <header>
+        <nav>
+           <button class="gohome">
+              <a href="../../index.html"><img src="../../spade-01.svg" class="homebutton"></a>
+           </button>
+           
+           <div id="rightheader">
+                <svg id="dash" height="1" width="200"><line x1="0" y1="1" x2="200" y2="1"/></svg>
+<!--                menu button-->
+                <div class="c--menubutton">
+                  <span class="c-menubutton">
+                    <a href="javascript:void(0)"  class="block__link" onclick="openNav()">MENU</a>
+                  </span>
+                  <span>
+                    <a href="javascript:void(0)"  class="block__link" onclick="openNav()">MENU</a>
+                </span>
+                </div>
+            </div>
+        </nav>
+        </header>
+        
+ <!--           MENU-->
+            <div id="myNav" class="overlay">
+                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                    <div class="underlayerspin">
+                          <img src="Untitled-1-01.svg">
+                    </div>
+                    <div class="overlay-content">
+
+                        <div class="tob">
+                           <span class="project-list-item">
+                               <p>01</p>
+                               </span>
+                               <span class="project-list-item">
+                               <a href="#"><h1>Goldman Sachs</h1></a>
+                           </span>
+                           <br>
+                            <span class="project-list-item">
+                               <p>02</p>
+                               </span>
+                               <span class="project-list-item">
+                               <a href="#"><h1>Project Title</h1></a>
+                           </span>
+                           <br>
+                            <span class="project-list-item">
+                               <p>03</p>
+                               </span>
+                               <span class="project-list-item">
+                               <a href="#"><h1>Project Title</h1></a>
+                           </span>
+                           <br>
+                           <span class="project-list-item">
+                               <p>__</p>
+                               </span>
+                            <a href="#" class="project-list-item"><h1>About / cv</h1></a>
+                        </div>
+                    </div>
+                    <div class="contacts">
+                        <div class="left">
+                                <a href="https://www.linkedin.com/in/katie-chen-76907412b/"><h2>LinkedIn</h2></a>
+                                <a href="https://www.linkedin.com/in/katie-chen-76907412b/"><h2>Instagram</h2></a>
+                            </div>
+                        <a href="https://www.linkedin.com/in/katie-chen-76907412b/" class="right"><h2>katie.q.chen@gmail.com</h2></a>
+                    </div>
+                </div>
+            <section class="child">
+      
+            <div id="homepage">
+                <h1 id="mytitle">AIGA MONSTERS</h1>
+<!--
+                <div id="introduction" class="section" data-anchor="introanchor">
+                    <p>
+                    NYC based<br>UX Designer @ <a href="https://design.gs.com/d/" target="_blank" class="block__link">Goldman Sachs</a><br> <br>Design and HCI grad from<br><a href="https://design.cmu.edu/" target="_blank" class="block__link">Carnegie Mellon University</a><br> 
+                    </p>
+                 </div>
+-->
+            </div>
+            </section>
+
+            <article class="project-child">
+                <div class="project-about" >
+                  <h2>Visualize the data provided in the 13,514 answers of the 2017 AIGA design census.</h2>
+
+                    <div class="right-col">
+                    <h1>Team members</h1>
+                    <p>Maddy Cha, Allissa Chan, Katie Chen, Rachel Glasser</p>
+                    <h1>About</h1>
+                    <p>3 months<br>
+                    spring 2018<br>
+                    Communications Design Studio III</p>
+                    
+                    <h1>OUR APPROACH</h1>
+                    <p>We wanted the data to be more “human” and more realistic, to tell the story of each designer who responded to the design census. We depicted the data by associating certain responses with certain visual forms (ie. job satisfaction to head shape), to generate monsters to show a designer’s series of responses. </p>
+                   
+                    <p>We created an interactive web experience where the user can answer a set of questions taken from the AIGA design census, and watch their monster slowly get built and see how many other designers they compare to who took the survey. At the end, they can also explore other designers in their local area. We also have a handheld print component and onboarding video to introduce the project.</p>
+                    <br>
+                    <h1>MY ROLE</h1>
+                    <p>I used python to decipher the .csv from AIGA and gather the necessary data to compare the user’s choices with the responses in the survey. I also worked with my teammate Maddy to code the interactive website using HTML/CSS/JQuery.</p>
+                       
+                    </div>
+                </div>
+            </article>
+
+            <article class="child">
+                    <iframe src="https://player.vimeo.com/video/317261820"
+   width="1040" height="760" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+            </article>
+            
+            <article class="child">
+                 <img src="imgs/slide.gif">
+            </article>
+            
+            <article class="child">
+                      <img src="imgs/survey.gif">
+            </article>
+            
+             <article class="child">
+                      <img  src="imgs/explore.gif">
+            </article>
+            <article class="child">
+                      <img id="post" src="imgs/monsters-postcards-0.png">
+            </article>
+            <article class="child">
+                      <img id="post" src="imgs/monsters-postcards-1.png">
+            </article>
+            <article class="child">
+                      <img id="post" src="imgs/monsters-postcards-2.png">
+            </article>
+            <article class="child">
+                      <img id="post" src="imgs/monsters-postcards-3.png">
+            </article>
+            
+            <article class="child">
+                <div class="project-about">
+                        <h2>Data Analysis</h2>   
+            <p>To start, we looked at ways we could narrow down the 13000+ responses. We picked out particular questions we felt strongly about as a group and eliminated similar questions. We then mapped body/face features to each of the questions and their answers.</p>
+                    </div>
+                    <img id="post" src="imgs/process2.png">
+            </article>
+            
+            <article class="child">
+                <img id="post" src="imgs/process.jpeg">
+            </article>
+            
+            <article class="child">
+                       <div class="project-about">
+                        <h1>Interim Presentation</h1>   
+                        <p>After organizing and deciding what parts of the census data we wanted to include, we created a concept presentation for how we wanted to represent the information visually.</p>
+                        </div>
+                <div class="intro-grid">
+                    <div id="col">
+                    <img src="imgs/interim/1.jpg">
+                    </div>
+                    <div id="col">
+                    <img src="imgs/interim/2.jpg">
+                    </div>
+                    <div id="col">
+                    <img src="imgs/interim/3.jpg">
+                    </div>
+                    <div id="col">
+                    <img src="imgs/interim/4.jpg">
+                    </div>
+
+                    </div>
+    
+            </article>
+            
+            <article class="child">
+        
+
+                <div class="intro-grid">
+                                       <div id="col">
+                    <img src="imgs/interim/5.jpg">
+                    </div>
+                    <div id="col">
+                    <img src="imgs/interim/6.jpg">
+                    </div>
+                    <div id="col">
+                    <img src="imgs/interim/7.jpg">
+                    </div>
+                    <div id="col">
+                    <img src="imgs/interim/8.jpg">
+                    </div>
+                    <div id="col">
+                    <img src="imgs/interim/9.jpg">
+                    </div>
+                    <div id="col">
+                    <img src="imgs/interim/10.jpg">
+                    </div>
+                </div>
+    
+            </article>
+            
+        </div>
+        
+    
+    </body>
+</html>
