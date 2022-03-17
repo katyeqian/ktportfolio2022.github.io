@@ -2,61 +2,76 @@
 <html>
     <head>
        <title>katie q chen</title>
-        <link rel="stylesheet" type="text/css" href="style.css"> 
+       <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+       <link rel="stylesheet" type="text/css" href="styleindex.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500&family=Public+Sans:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300;1,400&display=swap" rel="stylesheet">
-               <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500&display=swap" rel="stylesheet">
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
         <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script src="hover.js"></script>
+
     </head>
     <body>
         <div class="custom-cursor"></div>
         <div class="block block--white">  
-       
+<!---------------------------------------------------------------------------------------->
+
         <header id="header">
+<!--        <h1 id="me">katie q chen</h1>-->
           <nav class="nav">
                <button class="gohome">
-              <img src="spade-01.svg" class="homebutton">
+               <a href="index.html"><svg class="homebutton" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.439 0C14.439 7.7993 20.8985 14.1607 29 14.5024C20.9545 14.9022 14.561 21.2399 14.561 29C14.561 21.2007 8.10151 14.8393 0 14.4976C8.04545 14.099 14.439 7.76015 14.439 0Z" fill="currentColor"></path></svg></a>
+               
             </button>
             <button class="toggle-menu">
               <span></span>
             </button>
+            <button class="white-burger">
+              <span></span>
+            </button>
           </nav>
-        </header>
+          
+          </header>
 
         <div id="menu" class="">
           <nav class="main-nav">
             <ul>
+<!--
               <li>
                 <a href="projects/GoldmanSachs/gs.html">
                   <span id="italicsmall">01</span>
                   Goldman Sachs
                 </a>
               </li>
+-->
               <li>
                 <a href="projects/Aris/Aris.html">
-                  <span id="italicsmall">02</span>
+                  <span id="italicsmall">01</span>
                   Aris
                 </a>
               </li>
              <li>
-                <a href="projects/Wholestory/AIGA.html">
-                 <span id="italicsmall">03</span>
+                <a href="projects/Wholestory1/wholestory.html">
+                 <span id="italicsmall">02</span>
                   Wholestory
                 </a>
               </li>
+<!--
               <li>
-                <a href="projects/AIGA/AIGA.html">
-                 <span id="italicsmall">04</span>
-                  AIGA Monsters
+                <a href="">
+                 <span id="italicsmall">03</span>
+                  Coming soon
                 </a>
               </li>
+-->
 
               <li>
-                <a href="#">
+                <a href="about.html">
                    <span id="italicsmall">_</span>
                   About / CV
                 </a>
@@ -70,13 +85,13 @@
                 <li>
                   <a href="#">
                     <i class="fa fa-twitter fa-fw"></i>
-                    Twitter
+                    Katie.q.chen@gmail.com
                   </a>
                 </li>
                 <li>
-                  <a href="#">
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/katie-chen-76907412b/">
                     <i class="fa fa-envelope fa-fw"></i>
-                    Subscribe
+                    Linkedin
                   </a>
                 </li>
               </ul>
@@ -84,99 +99,176 @@
           </footer>
         </div>
         
- <!--           MENU-->
-<!--
-            <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="underlayerspin">
-                          <img src="Untitled-1-01.svg">
-                    </div>
-                    <div class="overlay-content">
 
-                        <div class="tob">
-                           <span class="project-list-item">
-                               <p>01</p>
-                               </span>
-                               <span class="project-list-item">
-                               <a href="#"><h1>Goldman Sachs</h1></a>
-                           </span>
-                           <br>
-                            <span class="project-list-item">
-                               <p>02</p>
-                               </span>
-                               <span class="project-list-item">
-                               <a href="#"><h1>Project Title</h1></a>
-                           </span>
-                           <br>
-                            <span class="project-list-item">
-                               <p>03</p>
-                               </span>
-                               <span class="project-list-item">
-                               <a href="#"><h1>Project Title</h1></a>
-                           </span>
-                           <br>
-                           <span class="project-list-item">
-                               <p>__</p>
-                               </span>
-                            <a href="#" class="project-list-item"><h1>About / cv</h1></a>
-                        </div>
-                    </div>
-                    <div class="contacts">
-                        <div class="left">
-                                <a href="https://www.linkedin.com/in/katie-chen-76907412b/"><h2>LinkedIn</h2></a>
-                                <a href="https://www.linkedin.com/in/katie-chen-76907412b/"><h2>Instagram</h2></a>
-                            </div>
-                        <a href="https://www.linkedin.com/in/katie-chen-76907412b/" class="right"><h2>katie.q.chen@gmail.com</h2></a>
-                    </div>
-                </div>
--->
+        
+    <!---------------------------------------------------------------------------------------->
             <section class="child">
       
             <div id="homepage">
                 <div id="introduction" class="section" data-anchor="introanchor">
-                   <h1 id="mytitle">Katie Q Chen</h1>
-                    <p>NYC based / 
-                        UX Designer <span id="italic">@ <a href="https://design.gs.com/d/" target="_blank" class="block__link">Goldman Sachs</a></span> / Design and HCI grad from <span id="italic"><a href="https://design.cmu.edu/" target="_blank" class="block__link">Carnegie Mellon University</a></span>
-                    </p>
+                  <div class="item1">
+                       <h2>Katie q Chen</h2>
+                   </div>
+                   
+                   <div class="links">
+                       <h2><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/katie-chen-76907412b/">Connect↗</a></h2>
+                       <h2><a target="_blank" rel="noopener noreferrer" href="katiechen2022cv.pdf">CV↗</a></h2>
+                    <h2>katie.q.chen@gmail.com</h2>
+                   </div>
+                </div>
+                
+                <div id="text">
+                    <h4>NYC based UX Designer @ <br><a href="https://design.gs.com/d/" target="_blank" class="block__link">Goldman Sachs</a>—Design and HCI grad from <a href="https://design.cmu.edu/" target="_blank" class="block__link">Carnegie Mellon University</a>
+                    </h4>
                  </div>
             </div>
             </section>
 
             <section class="child">
-                <div class="project" >
-                    <div class="project-text">
-                        <h3 id="number" class="hidesmol2">01</h3>
-                        <h2 id="project-title" class="hideme2"><a href="projects/GoldmanSachs/gs.html">Goldman Sachs</a></h2>
-                        <p class="hidesmol2">July 2021 | This project is about this and that and this and that. This project is about this and that and this and that. Filler text no fun.</p>
-
-                    </div>
-<!--                    <img src="test1.png">-->
+                <div class="wrapper">
+<!--                <div class="project">-->
+<!--                <div class="project-text">-->
+                
+                <div class="item1">
+                    <h2 class="hideme2">2020</h2>
                 </div>
+                <div class="item2">
+                    <h2>product strategy<br>
+                    UIUX Design<br>
+                    Motion<br></h2>
+                </div>
+                <div class="item3">
+                    <h2>An investing & <br>trading literacy <br>platform</h2>
+                </div>
+                <div class="item4">
+                    <a href="projects/Aris/Aris.html"><img class="hideme2" src="thumbnails/arisintro.gif"></a>
+                </div>
+                
+<!--
+                   <div class="number"><h2 class="hidesmol" >01</h2></div>
+                    <div class="project-text">
+                    <li>
+                        <a href="projects/Aris/Aris.html"><button><img class="hideme2" src="thumbnails/test.png"></button></a>
+                    </li>
+                    <li>
+                        <a href="projects/Aris/Aris.html"><button><img class="hideme2" src="thumbnails/test.png"></button></a>
+                    </li>
+                    <li>
+                        <a href="projects/Aris/Aris.html"><button><img class="hideme2" src="thumbnails/test.png"></button></a>
+                    </li>
+-->
+<!--
+                        <div class="project-col">
+                            <h1 id="project-title" class="hideme2"><a href="projects/Aris/Aris.html">Wholestory</a></h1>
+                            <h2 class="hidesmol2">A trading &#38; investing literacy platform</h2>
+                        </div>
+            
+                    <div class="project-col">
+                       <li>
+-->
+<!--                        <a href="projects/Aris/Aris.html"><button><img class="test" src="thumbnails/test.png"></button></a></li>-->
+                        
+                    </div>
+                     <h1>Aris</h1>
             </section>
 
             <section class="child">
-                <div class="project" >
-                    <div class="project-text">
-                        <h3 id="number" class="hidesmol1">02</h3>
-                        <h2 id="project-title" class="hideme1"><a href="projects/Wholestory1/wholestory.html">WHOLE STORY</a></h2>
-                        <p class="hidesmol1">July 2021 | This project is about this and that and this and that. This project is about this and that and this and that. Filler text no fun.</p>
-
+               <div class="wrapper">
+                
+                    <div class="item1">
+                        <h2 class="hideme2">2020</h2>
                     </div>
-<!--                    <img src="test2.png">-->
+                    <div class="item2">
+                        <h2>product strategy<br>
+                        UIUX Design <br>
+                        Motion<br></h2>
+                    </div>
+                    <div class="item3">
+                        <h2>A new personalized grocery <br>experience using AR<br></h2>
+                    </div>
+                    <div class="item4">
+                        <a href="projects/Wholestory1/wholestory.html"><img class="hideme2" src="thumbnails/Mask%20Group-1.png"></a>
+                    </div>
+                </div>
+                <h1>Wholestory</h1>
+            </section>
+            
+<!--
+            <section class="child">
+                <div class="about-wrapper">
+                   <div class="about1">
+                       <img src="kt.jpg">
+                    </div>
+                    <div class="about2">
+                       <h6>about me</h6>
+                        <h5>NYC based UX designer building product strategy, visual UI systems & robust user experiences for internal facing platforms. I’m interested in having more ownership over the products I work on and future opportunities to design external facing products.<br><br>
+
+                        Outside of work I enjoy drawing, eating, shopping, playing games & going on runs ⚡️</h5>
+                        
+                        <br><br>
+                        <h8><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/katie-chen-76907412b/">Connect↗</a></h8>
+                        <h8><a target="_blank" rel="noopener noreferrer" href="katiechen2022cv.pdf">CV↗</a></h8>
+                    <h8>katie.q.chen@gmail.com</h8>
+                    </div>
+                </div>
+-->
+<!--
+                <div class="about-wrapper">
+                   <div class="about1">
+                       <h6>Dec 2021—Present<br>
+                       New York, NY</h6>
+                    </div>
+                    <div class="about2">
+                       <h7><bold>Goldman Sachs</bold> / Senior Analyst </h7>
+                        <p>Leading internal facing UX design on a new client business within Asset Management Division (first launch—Mar 2022) and on Partner level Human Capital Management business (first launch—Jan 2022). </p>
+                    </div>
+-->
                 </div>
             </section>
             
+<!--
             <section class="child">
-                <div class="project">
-                    <div class="project-text" >
-                        <h3 id="number" class="hidesmol3" >03</h3>
-                        <h2 id="project-title" class="hideme3"><a href="projects/AIGA/AIGA.html">AIGA MONSTERS</a></h2>
-                        <p class="hidesmol3">July 2021 | This project is about this and that and this and that. This project is about this and that and this and that. Filler text no fun.</p>
-
+                <div class="wrapper">
+                
+                    <div class="item1">
+                        <h2 class="hideme2">2020</h2>
                     </div>
-<!--                    <img src="test2.png">-->
+                    <div class="item2">
+                        <h2>product strategy<br>
+                        UIUX Design <br>
+                        Motion<br></h2>
+                    </div>
+                    <div class="item3">
+                        <h2>A new personalized grocery <br>experience using AR<br></h2>
+                    </div>
+                    <div class="item4">
+                        <a href="projects/Wholestory1/wholestory.html"><img class="hideme3" src="thumbnails/Mask%20Group-2.png"></a>
+                    </div>
                 </div>
+                <h1>AIGA Monsters</h1>
             </section>
+            
+            <section class="child">
+                <div class="wrapper">
+                
+                    <div class="item1">
+                        <h2 class="hideme2">2020</h2>
+                    </div>
+                    <div class="item2">
+                        <h2>product strategy<br>
+                        UIUX Design <br>
+                        Motion<br></h2>
+                    </div>
+                    <div class="item3">
+                        <h2>A new personalized grocery <br>experience using AR<br></h2>
+                    </div>
+                    <div class="item4">
+                        <img class="hideme2" src="thumbnails/Mask%20Group-1.png">
+                    </div>
+                </div>
+                <h1>Candide</h1>
+            </section>
+-->
         </div>
         
         
