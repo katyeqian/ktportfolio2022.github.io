@@ -750,8 +750,8 @@ section h1 {
 
 
 #text h4 {
-    font-size: 45px;
-    line-height: 45px;
+    font-size: 40px;
+    line-height: 40px;
 }
 
 #introduction {
@@ -773,6 +773,8 @@ section h1 {
 #text {
     position: absolute;
     bottom: 2px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
 }
 
 #italic {
