@@ -621,8 +621,17 @@ header .homebutton:hover {
     transition: 0.5s ease-in-out;
 }
 
+/*
+#text a:hover {
+    font-style: italic;
+    text-decoration: none;
+    transition: 0.5s ease-in-out;
+}
+*/
+
 #introduction a:hover {
     font-style: italic;
+/*    font-weight: 300;*/
     color: black;
     transition: 0.5s ease-in-out;
 }
@@ -693,6 +702,7 @@ section h1 {
   grid-area: b;
     overflow: hidden;
 }
+
 
 @media screen and (min-width: 0px) and (max-width: 576px) {
     

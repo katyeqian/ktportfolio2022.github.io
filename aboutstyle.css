@@ -43,21 +43,22 @@ q:before, q:after {
 	content: none;
 }
 
-/*-----------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
 
 @font-face {
   font-family: ogg;
-  src: url(../Ogg-Regular.woff) format("woff");
+  src: url(Ogg-Regular.woff) format("woff");
   font-weight: regular;
 }
 
 @font-face {
   font-family: ogg;
-  src: url(../Ogg-RegularItalic.woff) format("woff");
+  src: url(Ogg-RegularItalic.woff) format("woff");
   font-style: italic;
 }
 
-/*-----------------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------------------*/
+
 
 body {
     font-family: 'ogg', serif;
@@ -67,7 +68,6 @@ body {
     margin: 0;
     overflow-x: hidden;
     cursor: none;
-/*    position: absolute;*/
 }
 
 #white{
@@ -80,28 +80,38 @@ body {
     background: white;
 }
 
-/*-----------------------------------------------------------------------------------------*/
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+
+/*------------------------------------------------------------------------------------*/
 
 /* Summer 2019 */
+
 h2 {
-/* font-family: 'Work Sans', sans-serif;*/
+    font-family: 'Work Sans', sans-serif;
     font-size: 30px;
     font-weight: 100;
     margin-bottom: 2rem;
-    text-align: center;
+    text-transform: uppercase; 
 }
 
 /* Project Title */
 h1 {
     font-family: 'ogg', serif;
     font-size: 7rem;
-    text-align: center;
     margin-bottom: 2rem;
     text-transform: none;    
 }
 
 /* Opportunity Space; names, tools, roles, timeline header */
 h3 {
+    font-family: 'Work Sans', sans-serif;
     margin-bottom: 2rem;
     text-transform: uppercase;
     font-weight: 300;
@@ -117,6 +127,7 @@ h4 {
 }
 
 p {
+    font-family: 'Work Sans', sans-serif;
     font-weight: 300;
     margin-bottom: 3rem;
     margin-top: 1.5rem;
@@ -133,237 +144,45 @@ h5  {
     margin-bottom: 1rem !important;
 }
 
+/*------------------------------------------------------------------------------------*/
 
-/*-----------------------------------------------------------------------------------------*/
 
-
-#projectpage {
-    width: 100vw;
-    font-family: 'Work Sans', sans-serif;
-    position: absolute;
+html {
+    scroll-snap-type: y mandatory;
+    cursor: none;
 }
 
-#projectpage img {
-    width: 100vw;
+a {
+    cursor: none;
 }
 
-.project-opening {
-    margin-top: 5rem;
-    margin-bottom: 10rem;
+.hideme1, .hideme2, .hideme3, .hidesmol1, .hidesmol2, .hidesmol3, .hidemex, .hidesmolx {
     opacity: 0;
 }
 
-.herohide {
-    opacity: 0;
-}
-
-/*-----------------------------------------------------------------------------------------*/
-
-
-#projectintro {
-    width: 700px;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: left;
-    margin-top: 10rem;
-    margin-bottom: 6rem;
-}
-
-#divider {
-    stroke-width: 2;
-    stroke: black;
-    margin-top: 5rem;
-}
-
-.projectwidth-centered{
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.projectwidth-centered h3 {
-    margin-top: 5rem;
-}
-
-
+section {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    scroll-snap-align: start;
+    background-size: 100%;
+    z-index: 1;
+    }
 /*------------------------------------------------------------------------------------*/
 
 
-#team-tools-grid {
-    display: grid;
-    grid-template-columns: auto auto auto auto;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    margin-bottom: 5rem;
+li {
+    list-style-type: none !important;
 }
-
-
-#team-tools-col {
-    padding: 3rem;
-    border-right: 1px solid;
-}
-
-/*------------------------------------------------------------------------------------*/
-
-#previews {
-    margin-top: 10rem;
-    grid-template-columns: auto auto;
-    display: grid;
-    grid-gap: 2rem;
-    margin-bottom: 10rem;
-}
-
-#previews img.p1 {
-    width: 70%;
-    float: right;
-}
-
-#previews img.p2 {
-    width: 70%;
-    margin-top: 10rem;
-}
-
-#previews img.p3 {
-    margin-top: 2rem;
-    width: 77%;
-    float: right;
-}
-
-/*------------------------------------------------------------------------------------*/
-
-
-.process-text {
-    display: grid;
-    grid-template-columns: auto 60%;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
-}
-
-.process-text h1 {
-    font-size: 2rem;
-    color: #DFDFDF;
-    text-align: left;
-}
-
-
-#biege {
-    background: #F7F3EB;
-}
-
-#grey {
-    background: #EFEFEF;
-}
-
-/*------------------------------------------------------------------------------------*/
-
-
-#projectbody img.big {
-    width: 1000px;
-    margin-bottom: 2rem;
-}
-
-#projectbody img.shadow {
-    box-shadow: 2px 4px 7px 5px rgba(188, 188, 188, 0.25);
-}
-
-
-#projectbody img.pic {
-    width: 410px;
-} 
-
-#projectbody img.mock {
-    width: 350px;
-}
-
-/*------------------------------------------------------------------------------------*/
-
 
 .hideme {
     opacity: 0;
 }
-
-.project-features-grid {
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-    width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-    display: grid;
-    grid-template-columns: 53% 47%;
-    grid-gap: 2rem;
-    text-align: center;
-}
-
-.side-text {
-    align-self: center;
-    text-align: left;
-}
-
 /*------------------------------------------------------------------------------------*/
 
-#footer-grid {
-    margin-top: 10rem;
-    display: grid;
-    grid-template-columns: 22% 35% 21% 22%;
-    border-bottom: 1px solid;
-    border-top: 1px solid;
-    text-align: center;
-}
-
-#footer-grid h3 {
-    text-transform: uppercase;
-    font-weight: 300;
-}
-
-#footer-grid a {
-    text-decoration: none;
-    color: black;
-}
-
-#footer-col {
-    padding: 3rem;
-    border-right: 1px solid;
-}
-
-/*
-#footer-col:nth-child(1, 4) {
-    text-align: right;
-}
-*/
-
-.prev {
-    transform: rotate(180deg) scale(0.8) !important;
-}
-
-.next {
-    transform: scale(0.8);
-    width: 60px;
-    height: 60px;
-    border-radius: 50px;
-    background: none;
-    transition: all 0.5s ease-out;
-    stroke: black;
-}
-
-.next:hover {
-    stroke: white;
-    background-color: black;
-}
-
-#end {
-    color: #d2d2d2;
-    font-size: 0.7rem;
-    text-align: center;
-    margin: 0;
-}
-
-
-/*------------------------------------------------------------------------------------*/
 
 /*MENU*/
-#header {
-	 padding: 2rem;
-}
 
 #menu {
 	 background: black;
@@ -421,6 +240,7 @@ h5  {
 	 animation-fill-mode: both;
 	 animation-name: fadeInUp;
 }
+
 
 #italicsmall {
     font-style: italic;
@@ -481,7 +301,73 @@ h5  {
 	 text-decoration: none;
 }
 
+.white-burger {
+	 background-color: transparent;
+	 border: none;
+	 cursor: pointer;
+	 display: none;
+	 float: right;
+	 height: 50px;
+	 outline: none;
+	 padding: 0;
+	 pointer-events: initial;
+	 position: relative;
+	 vertical-align: middle;
+	 width: 26px;
+	 z-index: 2000;
+}
+ .white-burger span {
+	 background-color: white;
+	 content: "";
+	 display: block;
+	 height: 2px;
+	 left: calc(50% - 13px);
+	 position: absolute;
+	 top: calc(50% - 1px);
+	 transform-origin: 50% 50%;
+	 transition: all 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
+	 width: 26px;
+     z-index: 2001;
+
+}
+ .white-burger span:before, .white-burger span:after {
+	 background-color: white;
+	 content: "";
+	 display: block;
+	 height: 2px;
+	 position: absolute;
+	 transform-origin: 50% 50%;
+	 transition: all 0.2s ease-in-out, top 0.2s 0.2s ease-out, transform 0.2s linear;
+	 width: 26px;
+    z-index: 2001;
+
+}
+ .white-burger span:before {
+	 top: 7px;
+}
+ .white-burger span:after {
+	 top: -7px;
+}
+
+.white-burger.active span {
+	 background-color: transparent !important;
+	 transition: background 0.2s ease-out;
+}
+ .white-burger.active span:before, .white-burger.active span:after {
+     background-color: white;
+	 transition: top 0.2s ease-out, transform 0.2s 0.2s ease-out;
+}
+ .white-burger.active span:before {
+	 top: 0;
+	 transform: rotate3d(0, 0, 1, -45deg);
+}
+ .white-burger.active span:after {
+	 top: 0;
+	 transform: rotate3d(0, 0, 1, 45deg);
+}
+
  .toggle-menu {
+     opacity: 1; 
 	 background-color: transparent;
 	 border: none;
 	 cursor: pointer;
@@ -493,11 +379,12 @@ h5  {
 	 pointer-events: initial;
 	 position: relative;
 	 vertical-align: middle;
-	 width: 50px;
+	 width: 26px;
 	 z-index: 2000;
 }
+
  .toggle-menu span {
-	 background-color: black;
+	 background-color: #edecce;
 	 content: "";
 	 display: block;
 	 height: 2px;
@@ -510,9 +397,8 @@ h5  {
      z-index: 2000;
 
 }
-
  .toggle-menu span:before, .toggle-menu span:after {
-	 background-color: black;
+	 background-color: #edecce;
 	 content: "";
 	 display: block;
 	 height: 2px;
@@ -530,7 +416,7 @@ h5  {
 	 top: -7px;
 }
  .toggle-menu.active span {
-	 background-color: transparent;
+	 background-color: transparent !important;
 	 transition: background 0.2s ease-out;
 }
  .toggle-menu.active span:before, .toggle-menu.active span:after {
@@ -547,7 +433,6 @@ h5  {
 }
 
 /*------------------------------------------------------------------------------------*/
-
 /*CURSOR*/
 
 .custom-cursor {
@@ -574,7 +459,7 @@ h5  {
   color: #f2f4f3;
 }
 .block--white {
-  background-color: #f2f4f3;
+  background-color: #aeaa8f;
   color: black;
 }
 .block__title,
@@ -587,7 +472,6 @@ h5  {
 /*  font-weight: 300;*/
 /*  text-align: center;*/
 }
-
 .block__link {
 /*  padding: .5em;*/
   text-decoration: none;
@@ -603,21 +487,17 @@ button {
 	outline: inherit;
     background: none;
     text-decoration: none;
+    padding: 0px;
 }
-
-/*------------------------------------------------------------------------------------*/
 
 /*HEADER*/
 
 header {
     width: 95%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     position: fixed;
     z-index: 9999;
-    padding-top: 2rem;
-/*    margin-top: 0 !important;*/
-
 }
 
 .gohome:hover a{
@@ -629,20 +509,26 @@ header {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(108%) contrast(108%);
 }
 
+
 .white-color {
     background-color: white;
 }
 
+/*------------------------------------*/
+header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
 
 header .homebutton {
-    color: black;
+    color: #edecce;
     transition: 0.70s;
     -webkit-transition: 0.70s;
     -moz-transition: 0.70s;
     -ms-transition: 0.70s;
     -o-transition: 0.70s;
-    width: 5vw;
-    height: 5vh;
+    width: 40px;
+    height: 50px;
 }
 
 header .homebutton:hover {
@@ -658,15 +544,77 @@ header .homebutton:hover {
     transform: rotate(180deg);
 }
 
-#rightheader {
-    float:right;
+#homepage {
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 6rem;
 }
 
-@media screen and (min-width: 0px) and (max-width: 576px) {
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-    
-    body {
-        background: red;
-    }
+
+.about-wrapper > div {
+    color: #edecce;
+}
+
+.about-wrapper {
+    width: 70%;
+    position: relative;
+/*    border-top: 1px solid white;*/
+/*    border-bottom: 1px solid white;*/
+    padding-top: 9rem;
+    margin-left: 10%;
+/*    margin-right: auto;*/
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-gap: 3rem;
+}
+
+.about-wrapper>div>h5 {
+    line-height: 2.5rem;
+}
+h6 {
+    font-family: 'work sans', sans-serif;
+    font-size: 1rem;
+    text-transform: none;
+    font-weight: 500;
+    margin-bottom: 1rem;
+}
+
+h7 {
+    font-family: 'work sans', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+}
+
+h8 {
+    width: 100%;
+    display: block;
+    font-family: 'work sans', sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px #edecce solid;
+    opacity: 0.5;
+}
+
+h8:hover {
+    opacity: 1;
+}
+
+.about-wrapper>div>img {
+    width: 100%;
+}
+a {
+    text-decoration: none;
+    color: #edecce;
+}
+
+.about-wrapper>div>p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    margin: 0;
+    padding: 0;
+    font-weight: 200;
 }
 
