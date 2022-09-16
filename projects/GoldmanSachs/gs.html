@@ -2,7 +2,8 @@
 <html>
     <head>
        <title>katie q chen</title>
-        <link rel="stylesheet" type="text/css" href="../../style.css"> 
+       <link rel="shortcut icon" type="image/png" href="../../favicon.png">
+        <link rel="stylesheet" type="text/css" href="../projectstyle.css"> 
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;1,100;1,200&display=swap" rel="stylesheet">
@@ -10,132 +11,134 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.1/TweenMax.min.js"></script>
         <script src="../../script.js"></script>
     </head>
-    <body>
+    <body id="white">
         <div class="custom-cursor"></div>
         <div class="block block--white">  
        
-       <header>
-        <nav>
-           <button class="gohome">
-              <img src="../../spade-01.svg" class="homebutton">
-           </button>
-           
-           <div id="rightheader">
-                <svg id="dash" height="1" width="200"><line x1="0" y1="1" x2="200" y2="1"/></svg>
-<!--                menu button-->
-                <div class="c--menubutton">
-                  <span class="c-menubutton">
-                    <a href="javascript:void(0)"  class="block__link" onclick="openNav()">MENU</a>
-                  </span>
-                  <span>
-                    <a href="javascript:void(0)"  class="block__link" onclick="openNav()">MENU</a>
-                </span>
-                </div>
-            </div>
-        </nav>
-        </header>
-        
- <!--           MENU-->
-            <div id="myNav" class="overlay">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-                    <div class="underlayerspin">
-                          <img src="Untitled-1-01.svg">
-                    </div>
-                    <div class="overlay-content">
+       <header id="header">
+<!--        <h1 id="me">katie q chen</h1>-->
+          <nav class="nav">
+               <button class="gohome">
+               <a href="../../index.html"><svg class="homebutton" width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M14.439 0C14.439 7.7993 20.8985 14.1607 29 14.5024C20.9545 14.9022 14.561 21.2399 14.561 29C14.561 21.2007 8.10151 14.8393 0 14.4976C8.04545 14.099 14.439 7.76015 14.439 0Z" fill="currentColor"></path></svg></a>
+<!--              <img src="spade-01.svg" class="homebutton">-->
+            </button>
+            <button class="toggle-menu">
+              <span></span>
+            </button>
+          </nav>
+          
+          </header>
 
-                        <div class="tob">
-                           <span class="project-list-item">
-                               <p>01</p>
-                               </span>
-                               <span class="project-list-item">
-                               <a href="#"><h1>Goldman Sachs</h1></a>
-                           </span>
-                           <br>
-                            <span class="project-list-item">
-                               <p>02</p>
-                               </span>
-                               <span class="project-list-item">
-                               <a href="#"><h1>Project Title</h1></a>
-                           </span>
-                           <br>
-                            <span class="project-list-item">
-                               <p>03</p>
-                               </span>
-                               <span class="project-list-item">
-                               <a href="#"><h1>Project Title</h1></a>
-                           </span>
-                           <br>
-                           <span class="project-list-item">
-                               <p>__</p>
-                               </span>
-                            <a href="#" class="project-list-item"><h1>About / cv</h1></a>
-                        </div>
-                    </div>
-                    <div class="contacts">
-                        <div class="left">
-                                <a href="https://www.linkedin.com/in/katie-chen-76907412b/"><h2>LinkedIn</h2></a>
-                                <a href="https://www.linkedin.com/in/katie-chen-76907412b/"><h2>Instagram</h2></a>
-                            </div>
-                        <a href="https://www.linkedin.com/in/katie-chen-76907412b/" class="right"><h2>katie.q.chen@gmail.com</h2></a>
-                    </div>
-                </div>
-            <section class="child">
-      
-            <div id="homepage">
-                <h1 id="mytitle">Goldman Sachs</h1>
+        <div id="menu" class="">
+          <nav class="main-nav">
+            <ul>
+              <li>
+                <a href="projects/GoldmanSachs/gs.html">
+                  <span id="italicsmall">01</span>
+                  Goldman Sachs
+                </a>
+              </li>
+              <li>
+                <a href="../Aris/Aris.html">
+                  <span id="italicsmall">01</span>
+                  Aris
+                </a>
+              </li>
+             <li>
+                <a href="../Wholestory1/wholestory.html">
+                 <span id="italicsmall">02</span>
+                  Wholestory
+                </a>
+              </li>
 <!--
-                <div id="introduction" class="section" data-anchor="introanchor">
-                    <p>
-                    NYC based<br>UX Designer @ <a href="https://design.gs.com/d/" target="_blank" class="block__link">Goldman Sachs</a><br> <br>Design and HCI grad from<br><a href="https://design.cmu.edu/" target="_blank" class="block__link">Carnegie Mellon University</a><br> 
-                    </p>
-                 </div>
+              <li>
+                <a href="">
+                 <span id="italicsmall">03</span>
+                  Coming soon
+                </a>
+              </li>
 -->
-            </div>
-            </section>
 
-            <article class="project-child">
-                <div class="project-about" >
-                  <h2>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh. </h2>
-                    <div class="left-col">
-                        <h1>Team members</h1>
-                        <p>Katie Chen<bR>Katie Cha<br>Katie Qian</p>
+              <li>
+                <a href="../../about.html">
+                   <span id="italicsmall">_</span>
+                  About / CV
+                </a>
+              </li>
+            </ul>
+          </nav>
 
-                        <h1>Duration</h1>
-                        <p>12 months</p>
-                    </div>
-                    
-                     <h1>Overview</h1>
-                    <div class="right-col">
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et.</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="project-child">
-                <div class="project" >
-                    <div class="project-text">
-                        <h3 id="number" class="hidesmol1">02</h3>
-                        <h2 id="project-title" class="hideme1">PROJECT TITLE</h2>
-                        <p class="hidesmol1">July 2021 | This project is about this and that and this and that. This project is about this and that and this and that. Filler text no fun.</p>
-
-                    </div>
-<!--                    <img src="test2.png">-->
-                </div>
-            </article>
-            
-            <article class="child">
-                <div class="project">
-                    <div class="project-text" >
-                        <h3 id="number" class="hidesmol3" >03</h3>
-                        <h2 id="project-title" class="hideme3">PROJECT TITLE</h2>
-                        <p class="hidesmol3">July 2021 | This project is about this and that and this and that. This project is about this and that and this and that. Filler text no fun.</p>
-
-                    </div>
-<!--                    <img src="test2.png">-->
-                </div>
-            </article>
+          <footer class="menu-footer">
+            <nav class="footer-nav">
+              <ul>
+                <li>
+                  <a href="#">
+                    <i class="fa fa-twitter fa-fw"></i>
+                    Katie.q.chen@gmail.com
+                  </a>
+                </li>
+                <li>
+                  <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/katie-chen-76907412b/">
+                    <i class="fa fa-envelope fa-fw"></i>
+                    Linkedin
+                  </a>
+                </li>
+              </ul>
+            </nav>
+          </footer>
         </div>
         
+      
     
+        <div id="projectpage" >
+               <div class="project-opening">
+                    <h2>2020-Present</h2>
+                    <h1>Goldman Sachs</h1>
+                    <h2>UX Designer | Asset Management Division</h2>
+                </div>
+            
+                <div id="projectbody">
+                    <div class="projectwidth-centered">
+                        <img class="hideme big shadow" src="imgs/sma.png">
+                        <br>
+                        <br>
+                        <img class="hideme big shadow" src="imgs/alts.png">
+                    </div>
+                </div>
+<!--------------------------------------------------------------------------------------------------------------------->
+                <div id="projectintro">
+                    <h3>Work Experience / </h3>
+                    <h4 class="hideme">
+                        I've led the design of products for various stakeholders, ranging from Partners and Managing Directors at Goldman, to internal Service teams, to a system that touches all GS employees.</h4>
+
+                        <p>At Goldman, I've worked on internal tools for Human Capital Management, Audit, Executive Office, Core Engineering and Asset Management Divisions. <br><br>For the past year, I have been working on a series of projects related to Separately Managed Accounts and Alternatives Investments. This project will see a large internal role in the management of a combined <span id="italic">AUM of $670+ billion.</span><br><br>It has been a challenging but rewarding process that has taught me skills beyond design in product management, engineering strategies, and business discussions with senior leadership. Contact me to learn more.</p>
+                </div>
+                
+<!--------------------------------------------------------------------------------------------------------------------->
+
+
+            <div id="footer-grid" class="hideme">
+                        <div id="footer-col">
+                            <button class="prev next"><a href="../../about.html"><svg xmlns="http://www.w3.org/2000/svg" width="27.515" height="21.73" viewBox="0 0 27.515 21.73" class="slider-next"><g id="arrow" transform="translate(-1735 -1858.151)"><line id="Linie_20" data-name="Linie 20" x1="26" transform="translate(1735 1869)" stroke-width="2"></line> <path id="Pfad_2" data-name="Pfad 2" d="M6137,1857.5s.316,8.58,11.313,10.843" transform="translate(-4386 0.688)" fill="none" stroke-width="2"></path> <path id="Pfad_3" data-name="Pfad 3" d="M6137,1868.343s.316-8.58,11.313-10.843" transform="translate(-4386 11.501)" fill="none" stroke-width="2"></path></g></svg></a></button>
+                            <h5><a href="../../about.html">About me</a></h5>
+                        </div>
+                        <div id="footer-col">
+                            <h3>Get in touch</h3>
+                            <h5>katie.q.chen@gmail.com</h5>
+                        </div>
+                        <div id="footer-col">
+                            <h3>Connect</h3>
+                            <h5><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/katie-chen-76907412b/">Linkedin</a></h5>
+                        </div>
+                        <div id="footer-col">
+                            <button class="next"><a href="../Aris/Aris.html"><svg xmlns="http://www.w3.org/2000/svg" width="27.515" height="21.73" viewBox="0 0 27.515 21.73" class="slider-next"><g id="arrow" transform="translate(-1735 -1858.151)"><line id="Linie_20" data-name="Linie 20" x1="26" transform="translate(1735 1869)" stroke-width="2"></line> <path id="Pfad_2" data-name="Pfad 2" d="M6137,1857.5s.316,8.58,11.313,10.843" transform="translate(-4386 0.688)" fill="none" stroke-width="2"></path> <path id="Pfad_3" data-name="Pfad 3" d="M6137,1868.343s.316-8.58,11.313-10.843" transform="translate(-4386 11.501)" fill="none" stroke-width="2"></path></g></svg></a></button>
+                            <h5><a href="../Aris/Aris.html">Aris</a></h5>
+                        </div>
+            </div>
+    
+<!--------------------------------------------------------------------------------------------------------------------->
+        
+        </div>
+        </div>
     </body>
 </html>
