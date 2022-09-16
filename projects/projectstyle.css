@@ -662,15 +662,20 @@ header .homebutton:hover {
     float:right;
 }
 
-@media screen and (min-width: 0px) and (max-width: 576px) {
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
+@media screen and (max-width: 900px) {
     
-    body {
-        background: red;
+    #projectpage {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 6rem;
+        display: block;
     }
     
-    .scrollbar-hidden::-webkit-scrollbar {
-display: none;
-}
+    
+    
+    #projectpage::-webkit-scrollbar {
+        display: none;
+    }
 }
 
