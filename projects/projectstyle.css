@@ -668,5 +668,9 @@ header .homebutton:hover {
     body {
         background: red;
     }
+    
+    .scrollbar-hidden::-webkit-scrollbar {
+display: none;
+}
 }
 

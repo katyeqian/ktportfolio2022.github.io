@@ -873,6 +873,9 @@ section h1 {
         margin-left: 2.5%;
     }
 
-
+.scrollbar-hidden::-webkit-scrollbar {
+display: none;
+}
+    
 }
 
