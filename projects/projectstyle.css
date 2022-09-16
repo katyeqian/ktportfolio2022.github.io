@@ -664,6 +664,9 @@ header .homebutton:hover {
 
 @media screen and (max-width: 900px) {
     
+    p {
+        font-size: 2rem;
+    }
     #projectpage {
         width: 95%;
         margin-left: auto;
