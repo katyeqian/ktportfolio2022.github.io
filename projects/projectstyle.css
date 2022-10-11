@@ -641,8 +641,8 @@ header .homebutton {
     -moz-transition: 0.70s;
     -ms-transition: 0.70s;
     -o-transition: 0.70s;
-    width: 5vw;
-    height: 5vh;
+    width: 40px;
+    height: 50px;
 }
 
 header .homebutton:hover {
@@ -673,6 +673,71 @@ header .homebutton:hover {
         width: 0px;
         background: transparent;
 
+    }
+      
+        #menu {
+     padding: 1rem;
+    }
+    
+
+    #menu .main-nav a {
+	 color: #fff;
+	 display: block;
+	 font-size: 3rem;
+     text-align: left;
+     margin-left: 0;
+	 padding-bottom: 1rem;
+	 text-decoration: none;
+    }
+
+    
+    header {  
+        width: 95%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        position: fixed;
+    }
+/*NAV */
+      
+    header .homebutton {
+        color: black;
+        width: 50px;
+        height: 60px;
+    }
+    
+        .white-burger {
+         height: 60px;
+         width: 36px;
+    }
+     .white-burger span {
+         height: 2px;
+         width: 36px;
+    }
+     .white-burger span:before, .white-burger span:after {
+         background-color: white;
+         height: 2px;
+         width: 36px;
+
+    }
+
+        .toggle-menu {
+         height: 60px;
+         width: 36px;
+    }
+     .toggle-menu span {
+         height: 2px;
+         width: 36px;
+    }
+     .toggle-menu span:before, .toggle-menu span:after {
+         height: 2px;
+         width: 36px;
+
+    }
+    
+    nav {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
     }
       
       .project-opening {
@@ -797,5 +862,6 @@ background: transparent;
     padding: 3rem;
     border-bottom: 1px solid;
 }
+      
 
     }
