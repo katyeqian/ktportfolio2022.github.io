@@ -665,29 +665,72 @@ header .homebutton:hover {
 @media only screen 
   and (max-device-width: 812px) 
   and (orientation: portrait) { 
-      
-    p {
-        font-size: 2rem;
-        line-height: 2.5rem;
+      body {
+          height: 100vh;
+      }
+    body::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+        background: transparent;
+
     }
       
+    p {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+      
+      h2 {
+          font-size: 3rem;
+          line-height: 3.5rem;
+      }
+      
+      h1 {
+          font-size:6rem;
+      }
+      
+      h4 {
+          font-size: 5rem;
+          line-height: 5.5rem;
+      }
+      
+      h3 {
+          font-size: 2rem;
+      }
+      
+      .hideme {
+        opacity: 1;
+        }
+      
+      h5 {
+          font-size: 4rem;
+          line-height: 4.5rem;
+      }
+      
+      #team-tools-grid {
+          display: block;
+      }
+      
+      #team-tools-col {
+          border-bottom: 1px solid black;
+        padding-left: 10%;
+          padding-right: 10%; 
+      }
+    
+      #projectintro {
+          width: 80%;
+      }
+      
     #projectpage {
-        
+        width: 1050px;
         padding-top: 6rem;
         display: block;
     }
       
       #projectpage img {
-          width: 1000px;
+          width: 1050px;
       }
-    
-    ::-webkit-scrollbar {
-        display: none;
-        width: 0px;
-        background: transparent;
-        -webkit-appearance: none;
 
-}
     
     #projectpage::-webkit-scrollbar {
         display: none;
@@ -695,16 +738,29 @@ header .homebutton:hover {
 background: transparent;
     }
 
-
-#projectpage {
-    width: 1000px;
-}
+      .project-features-grid {
+          width: 80%;
+          display: block;
+      }
+      
+      #projectbody img.pic{
+          width: 100%;
+      }
+      #projectbody img.mock{
+          width: 100%;
+      }
+      
+      .process-text {
+          width: 80%;
+          grid-template-columns: auto 80%;
+          margin-left: auto;
+          margin-right: auto;
+      }
 
 #footer-grid {
-    width: 1000px;
+    width: 1050px;
     margin-top: 10rem;
     display: block;
-/*    grid-template-columns: 22% 35% 21% 22%;*/
     border-bottom: 1px solid;
     border-top: 1px solid;
     text-align: center;
