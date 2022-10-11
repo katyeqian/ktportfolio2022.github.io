@@ -677,7 +677,7 @@ header .homebutton:hover {
       
     p {
         font-size: 2.5rem;
-        line-height: 3rem;
+        line-height: 3.5rem;
     }
       
       h2 {
@@ -702,6 +702,10 @@ header .homebutton:hover {
         opacity: 1;
         }
       
+      .herohide {
+        opacity: 1;
+        }
+      
       h5 {
           font-size: 4rem;
           line-height: 4.5rem;
@@ -722,13 +726,13 @@ header .homebutton:hover {
       }
       
     #projectpage {
-        width: 1050px;
+        width: 1020px;
         padding-top: 6rem;
         display: block;
     }
       
       #projectpage img {
-          width: 1050px;
+          width: 1020px;
       }
 
     
@@ -758,7 +762,7 @@ background: transparent;
       }
 
 #footer-grid {
-    width: 1050px;
+    width: 1020px;
     margin-top: 10rem;
     display: block;
     border-bottom: 1px solid;
