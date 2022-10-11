@@ -585,8 +585,8 @@ header .homebutton:hover {
 }
 
 #text h4 {
-    font-size: 80px;
-    line-height: 90px;
+    font-size: 5.5rem;
+    line-height: 6rem;
 }
 
 #introduction {
@@ -621,13 +621,9 @@ header .homebutton:hover {
     transition: 0.5s ease-in-out;
 }
 
-/*
 #text a:hover {
-    font-style: italic;
-    text-decoration: none;
-    transition: 0.5s ease-in-out;
-}
-*/
+        color: cornflowerblue;
+    }
 
 #introduction a:hover {
     font-style: italic;
@@ -760,6 +756,7 @@ section h1 {
     font-size: 40px;
     line-height: 40px;
 }
+    
 
 #introduction {
     border-top: 1px solid black;
