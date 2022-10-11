@@ -18,9 +18,9 @@ $(document).ready(function() {
 
    
      $('.project-opening').animate({
-           "margin-top": "+=3rem",
+           "margin-top": "+=2rem",
             opacity: 1,
-          }, 1100, "swing" );
+          }, 1000, "swing" );
     
     $('.project-opening').promise().done(function() {
         $('.herohide').animate({

@@ -662,23 +662,71 @@ header .homebutton:hover {
     float:right;
 }
 
-@media screen and (max-width: 900px) {
-    
+@media only screen 
+  and (max-device-width: 812px) 
+  and (orientation: portrait) { 
+      
     p {
         font-size: 2rem;
+        line-height: 2.5rem;
     }
+      
     #projectpage {
-        width: 95%;
-        margin-left: auto;
-        margin-right: auto;
+        
         padding-top: 6rem;
         display: block;
     }
+      
+      #projectpage img {
+          width: 1000px;
+      }
     
-    
+    ::-webkit-scrollbar {
+        display: none;
+        width: 0px;
+        background: transparent;
+        -webkit-appearance: none;
+
+}
     
     #projectpage::-webkit-scrollbar {
         display: none;
+        width: 0px;
+background: transparent;
     }
+
+
+#projectpage {
+    width: 1000px;
 }
 
+#footer-grid {
+    width: 1000px;
+    margin-top: 10rem;
+    display: block;
+/*    grid-template-columns: 22% 35% 21% 22%;*/
+    border-bottom: 1px solid;
+    border-top: 1px solid;
+    text-align: center;
+}
+
+#footer-grid h5 {
+    font-size: 1.5rem;
+}
+
+#footer-grid h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+}
+
+#footer-grid a {
+    text-decoration: none;
+    color: black;
+}
+
+#footer-col {
+    padding: 2rem;
+    border-bottom: 1px solid;
+}
+
+    }
