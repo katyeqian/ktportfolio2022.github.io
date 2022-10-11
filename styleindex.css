@@ -932,6 +932,9 @@ header .homebutton {
         margin-right: auto;
     }
  
+    section {
+        scroll-snap-align: none;
+    }
     
 }
 
