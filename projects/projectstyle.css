@@ -690,8 +690,8 @@ header .homebutton:hover {
       }
       
       h4 {
-          font-size: 5rem;
-          line-height: 5.5rem;
+          font-size: 6rem;
+          line-height: 6.5rem;
       }
       
       h3 {
@@ -713,6 +713,8 @@ header .homebutton:hover {
       
       #team-tools-grid {
           display: block;
+          border: none;
+          border-top: 1px solid black;
       }
       
       #team-tools-col {
@@ -756,10 +758,13 @@ background: transparent;
       
       .process-text {
           width: 80%;
-          grid-template-columns: auto 80%;
+          display: block;
+/*          grid-template-columns: auto 80%;*/
           margin-left: auto;
           margin-right: auto;
       }
+      
+
 
 #footer-grid {
     width: 1020px;
@@ -768,10 +773,6 @@ background: transparent;
     border-bottom: 1px solid;
     border-top: 1px solid;
     text-align: center;
-}
-
-#footer-grid h5 {
-    font-size: 1.5rem;
 }
 
 #footer-grid h3 {
@@ -785,7 +786,7 @@ background: transparent;
 }
 
 #footer-col {
-    padding: 2rem;
+    padding: 3rem;
     border-bottom: 1px solid;
 }
 

@@ -618,3 +618,33 @@ a {
     font-weight: 200;
 }
 
+@media only screen 
+  and (max-device-width: 812px) 
+  and (orientation: portrait) { 
+      .about-wrapper {
+          display: block;
+          width: 80%;
+          padding-top: 6rem;
+      }
+
+      .about-wrapper>div>img {
+          margin-bottom: 2rem;
+      }
+      body {
+      }
+      
+      section {
+          height: 200vh;
+          scroll-snap-align: none;
+      }
+      
+      body::-webkit-scrollbar {
+          display: none;
+    }
+
+body {
+  -ms-overflow-style: visible; 
+  scrollbar-width: none; 
+}
+}
+

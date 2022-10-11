@@ -740,6 +740,10 @@ section h1 {
         padding-top: 6rem;
         display: block;
     }
+    
+    #homepage .item1, .links {
+        display: none;
+    }
 
     .links h2 {
         font-size: 20px;
@@ -753,14 +757,14 @@ section h1 {
 
 
 #text h4 {
-    font-size: 40px;
-    line-height: 40px;
+    font-size: 3.5rem;
+    line-height: 4rem;
 }
     
 
 #introduction {
     border-top: 1px solid black;
-    padding-top: 1rem;
+    margin-top: 1rem;
     display: block;
 }
 
@@ -855,6 +859,7 @@ section h1 {
 .item1 {
     padding-top: 1rem;
   grid-area: a;
+    
 }
 .item2 {
     display: none;
@@ -880,6 +885,53 @@ section h1 {
 .scrollbar-hidden::-webkit-scrollbar {
 display: none;
 }
+    
+body {
+  -ms-overflow-style: none; 
+  scrollbar-width: none; 
+}
+    
+header .homebutton {
+    color: black;
+    width: 50px;
+    height: 60px;
+    }
+    
+    .white-burger {
+	 height: 60px;
+	 width: 36px;
+}
+ .white-burger span {
+	 height: 2px;
+	 width: 36px;
+}
+ .white-burger span:before, .white-burger span:after {
+	 background-color: white;
+	 height: 2px;
+	 width: 36px;
+
+}
+    
+    .toggle-menu {
+	 height: 60px;
+	 width: 36px;
+}
+ .toggle-menu span {
+	 height: 2px;
+	 width: 36px;
+}
+ .toggle-menu span:before, .toggle-menu span:after {
+	 height: 2px;
+	 width: 36px;
+
+}
+    
+    nav {
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+ 
     
 }
 
