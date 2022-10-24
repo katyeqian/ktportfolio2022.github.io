@@ -481,7 +481,8 @@ h5  {
 	 text-decoration: none;
 }
 
- .toggle-menu {
+  .toggle-menu {
+     opacity: 1; 
 	 background-color: transparent;
 	 border: none;
 	 cursor: pointer;
@@ -493,9 +494,10 @@ h5  {
 	 pointer-events: initial;
 	 position: relative;
 	 vertical-align: middle;
-	 width: 50px;
+	 width: 26px;
 	 z-index: 2000;
 }
+
  .toggle-menu span {
 	 background-color: black;
 	 content: "";
@@ -510,7 +512,6 @@ h5  {
      z-index: 2000;
 
 }
-
  .toggle-menu span:before, .toggle-menu span:after {
 	 background-color: black;
 	 content: "";
@@ -530,7 +531,7 @@ h5  {
 	 top: -7px;
 }
  .toggle-menu.active span {
-	 background-color: transparent;
+	 background-color: transparent !important;
 	 transition: background 0.2s ease-out;
 }
  .toggle-menu.active span:before, .toggle-menu.active span:after {
@@ -611,13 +612,10 @@ button {
 
 header {
     width: 95%;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
     position: fixed;
     z-index: 9999;
-    padding-top: 2rem;
-/*    margin-top: 0 !important;*/
-
 }
 
 .gohome:hover a{
@@ -629,10 +627,16 @@ header {
     filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(251deg) brightness(108%) contrast(108%);
 }
 
+
 .white-color {
     background-color: white;
 }
 
+/*------------------------------------*/
+header {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+}
 
 header .homebutton {
     color: black;
@@ -657,6 +661,7 @@ header .homebutton:hover {
     -ms-transform: rotate(180deg);
     transform: rotate(180deg);
 }
+
 
 #rightheader {
     float:right;
